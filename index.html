@@ -32,9 +32,25 @@ button:hover {
     </style>
     <title>Hallo</title>
 </head>
-<body>
-    <button onclick="alert('Halo Haliza boleh kenalan ga?')" class="first">Klik ini dulu</button>
-    <button onclick="alert('Kalo boleh, kenalin gw Affa Alfiandy, panggil Affa aja, gasuka makan orang.')" class="second">Terus klik ini</button>
-    <button onclick="alert('Dah segitu aja biar ga kepanjangan, salam kenal ya')" class="third">Ini Terakhir</button>
+<body style="text-align: center;width:100vw;">
+    <h1 id="welcome">Halo, Boleh Kenalan Ga?</h1>
+    <h1 style="display: none;" id="tengkyu">Makasiii udh mau kenalan!!!</h1>
+    <div>
+      <button onclick="Gamau()" id="second">Gaboleh</button>
+      <button onclick="buttonfunction()" id="third">Boleh :)</button>
+      <script>
+        function buttonfunction (){
+          alert('Halooooo, gw Affa, ga suka makan orang, tapi kalo ayam goreng bisa dibicarakan. Suka nonton film diulang-ulang, sama seneng liatin bintang wkwkwkwk. dah segitu aja soalnya kucing gw naek ke laptopkljslpasiijkkjhkjahhdgbnmbhjvcbxzhashidhuigbskd;k;oshahdg asgdhbukajhak jdghasdgvsbnxb c habjdhsadk gj sajdhgddiukjwhd ');
+          document.getElementById("third").style.display="none";
+          document.getElementById("second").style.display="none";
+          document.getElementById("welcome").style.display="none";
+          document.getElementById("tengkyu").style.display="inline";
+        }
+        function Gamau(){
+          alert('Harus mau pokoknya mwehehhhehe')
+          document.getElementById("second").style.display="none";
+        }
+      </script>
+    </div>
 </body>
 </html>
